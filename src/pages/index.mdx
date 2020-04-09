@@ -1,0 +1,89 @@
+
+<div style={{textAlign: 'center'}}>
+  <h1 style={{fontSize: '40pt'}}>The Wellness Habit</h1>
+</div>
+<AuthorBanner />
+<div style={{marginTop: '8px'}}>
+  <Embed
+    src="https://www.youtube.com/embed/URVxGd7MOx4"
+  />
+</div>
+<div style={{textAlign: 'center'}}>
+  <h2 >
+    Bio
+  </h2>
+  <p>
+    My name is Josh, I studied at Bethel University and received my BA in Athletic Training.
+    I am a Licensed Athletic Trainer in the State of Minnesota.
+    I have always been intrigued by the human body, which sparked my career interest to start The Wellness Habit.
+    Due to some of my own pain while playing baseball I found Bodywork. I trained under my therapist back in January of 2017. 
+    I am now starting year 4 of working on clients. Getting out in front of injuries is what drives me and allows me to help my clients as best as possible. 
+    Getting to the root of the issue is the key when it comes to pain or injuries to help prevent further damage. 
+    I began personal training back in May of 2018 to help people reach their goals in terms of how they look and feel while focusing on proper form in order to prevent injury. 
+  </p>
+</div>
+
+<div style={{textAlign: 'center', backgroundColor: '#60746F', borderRadius: '8px', paddingBottom: '8px'}}>
+  <h3 style={{paddingTop: '10px'}}>Bodywork Sessions&nbsp;&nbsp;
+  </h3>
+    <Link to='schedule'>
+      <Button style={{marginTop: '8px'}}> Schedule a Bodywork Session</Button>
+    </Link>
+</div>
+
+<p>&nbsp;</p>
+<div style={{width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+  <div style={{display: 'inline-block', width: '50%', float: 'left'}}>
+    <h3>Podcasts&nbsp;&nbsp;
+      <Link to='podcasts'>
+        <Button style={{marginTop: '8px'}}>all podcasts</Button>
+      </Link>
+    </h3>
+    <FeedItems 
+      itemsFormat="compact" 
+      filterByTags={['podcast']} 
+      limit={4} 
+    />
+  </div>
+
+  <div style={{display: 'inline-block', width: '50%', float: 'left'}}>
+  <h3>Posts and Articles&nbsp;&nbsp;
+    <Link to='posts-and-articles'>
+      <Button style={{marginTop: '8px'}}>all posts and articles</Button>
+    </Link>
+  </h3>
+  <FeedItems 
+    itemsFormat="compact" 
+    filterByTags={['post', 'article']} 
+    limit={4} 
+  />
+  </div>
+
+  <div style={{display: 'inline-block', width: '50%', float: 'left'}}>
+  <h3>Videos&nbsp;&nbsp;
+    <Link to='videos'>
+      <Button style={{marginTop: '8px'}}>all videos</Button>
+    </Link>
+  </h3>
+  <FeedItems
+    itemsFormat="compact"
+    filterByTags={['video']}
+    limit={4}
+  />
+  </div>
+
+  <div style={{display: 'inline-block', width: '50%', float: 'left'}}>
+  <h3>Reviews&nbsp;&nbsp;
+    <Link to='reviews'>
+      <Button style={{marginTop: '8px'}}>all reviews</Button>
+    </Link>
+  </h3>
+  <FeedItems
+    itemsFormat="compact"
+    filterByTags={['review']}
+    limit={4}
+  />
+  </div>
+</div>
+<p>&nbsp;</p>
+
