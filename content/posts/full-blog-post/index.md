@@ -4,7 +4,7 @@ cover: ./image.jpg
 date: 2019-12-01
 description: All the usual blog post.
 tags: ['post', 'article']
-hide: false
+hide: true
 ---
 
 Websites like Reddit, StackOverflow, and GitHub had millions of people using Markdown. And Markdown started to be used beyond the web, to author books, articles, slide shows, letters, and lecture notes.
